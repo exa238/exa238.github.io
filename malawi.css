@@ -1,1 +1,31 @@
+body {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  color: #0f0602ff; /*smoky black*/
+}
 
+a,
+a:link {
+  color: #d49649ff; /* indian yellow*/
+  text-decoration: none;
+}
+a:visited {
+  color: #af371dff; /* chinese red*/
+}
+a:hover{
+  color: #4e643fff; /* hunter green*/
+  text-decoration: underline;
+}
+a:active{
+  color: rgb(45,28,17); /* dark brown*/
+}
+h1,
+h2 {
+  font-family: "Barlow", sans sarif;
+  font-weight: 900;
+  color: #af371dff;
+}
+
+p{
+  line-height: 1.35;
+}
