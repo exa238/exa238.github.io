@@ -48,8 +48,8 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "introduction                 introduction"
-    "people-and-society        environment";
+    "introduction introduction"
+    "people-and-society environment";
 
     grid-gap: 20px;
 }
