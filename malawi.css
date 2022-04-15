@@ -1,7 +1,63 @@
 body {
   font-family: "Roboto Slab", serif;
   font-size: 18px;
+  line-height: 1.5;
   color: #0f0602ff; /*smoky black*/
+  background-color: #E0E0E0; /*light grey*/
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "header header"
+    "nav    main"
+    "footer footer";
+
+  grid-gap: 20px;
+}
+
+
+header {
+  grid-area: header;
+  background-color: #af371dff; /*Chinese Red*/
+}
+
+nav {
+  grid-area: nav;
+  background-color: #af371dff; /*chinese red*/
+}
+
+main {
+  grid-area: main;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "introduction                 introduction"
+    "people-and-society        environment";
+
+    grid-gap: 20px;
+}
+
+
+footer {
+  grid-area: footer;
+  background-color: #692111; /*liver organ*/
+}
+
+
+#introduction {
+grid-area: introduction;
+background-color: #61694F; /*ebony green*/
+}
+
+#people-and-society {
+  grid-area: people-and-society;
+  background-color: #4e643fff; /*hunter green*/
+}
+
+#environment {
+  grid-area: environment;
+  background-color: rgb(49, 63, 39); /*kombu green*
 }
 
 a,
@@ -10,38 +66,31 @@ a:link {
   text-decoration: none;
 }
 a:visited {
-  color: #af371dff; /* chinese red*/
+  color: #8A1919; /*dark red*/
 }
 a:hover{
-  color: #4e643fff; /* hunter green*/
+  color: #af371dff; /* chinese red*/
   text-decoration: underline;
 }
 a:active{
   color: rgb(45,28,17); /* dark brown*/
 }
+
+
+
+
+
+
+
+
+
 h1,
 h2 {
   font-family: "Barlow", sans sarif;
   font-weight: 900;
-  color: #af371dff;
+  color: #0f0602ff; /*smoky black*/
 }
 
 p{
   line-height: 1.35;
-}
-
-.grid{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: 100px 100px;
-  grid-auto-rows: 300px;
-  grid-gaps: 20px;
-}
-
-.grid div {
-  border: 1px solid rgba(15, 6, 2, 1);
-  border-radius: 3px;
-  background-color: rgba(175, 55, 29, 1);
-  padding: 0.2rem;
-  color: #fff;
 }
