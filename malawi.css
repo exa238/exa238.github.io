@@ -3,27 +3,42 @@ body {
   font-size: 18px;
   line-height: 1.5;
   color: #0f0602ff; /*smoky black*/
-  background-color: #E0E0E0; /*light grey*/
+  background-color: #CED4DA; /*light grey*/
+  text-align: center;
 
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-areas:
     "header header"
-    "nav    main"
+    "nav nav"
+    "main main"
     "footer footer";
 
-  grid-gap: 20px;
+  grid-gap: 10px;
+}
+
+h1{
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+
 }
 
 
 header {
+  padding: 16px;
   grid-area: header;
-  background-color: #af371dff; /*Chinese Red*/
+  background-color: #C32F27; /*brigt red*/
+  border: 5px solid #0f0602ff; /*smoky black*/
 }
 
 nav {
   grid-area: nav;
-  background-color: #af371dff; /*chinese red*/
+  background-color: #496A26; /*deep green*/
+  text-align: center;
+  border: 5px solid #0f0602ff; /*smoky black*/
 }
 
 main {
@@ -41,35 +56,77 @@ main {
 
 footer {
   grid-area: footer;
-  background-color: #692111; /*liver organ*/
+  background color: /*put something here*/
+  padding: 20px;
 }
 
+footer p{
+  margin: 0;
+}
+
+th {
+  height: 70px;
+}
+
+td {
+  text-align: center;
+  verical-align: bottom;
+}
+
+th, td{
+  border-bottom: 1px solid #0f0602ff;
+  border-left: 1px solid #0f0602ff;
+
+}
+
+section {
+  padding: 20px;
+}
+
+table {
+  width: 75%;
+  border-collapse: collapse;
+  border: 1px solid;
+}
+
+.center-a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-b{
+  margin-left: auto;
+  margin-right: auto;
+}
 
 #introduction {
 grid-area: introduction;
-background-color: #61694F; /*ebony green*/
+background-color: #D8572A; /*red-orange*/
+border: 5px solid #0f0602ff; /*smoky black*/
 }
 
 #people-and-society {
   grid-area: people-and-society;
-  background-color: #4e643fff; /*hunter green*/
+  background-color: #F7B538; /*yellow*/
+  border: 5px solid #0f0602ff; /*smoky black*/
 }
 
 #environment {
   grid-area: environment;
-  background-color: rgb(49, 63, 39); /*kombu green*
+  background-color: #A22615; /*burgundy*/
+  border: 5px solid #0f0602ff; /*smoky black*/
 }
 
 a,
 a:link {
-  color: #d49649ff; /* indian yellow*/
+  color: #FFFFFF; /* white*/
   text-decoration: none;
 }
 a:visited {
-  color: #8A1919; /*dark red*/
+  color: #6C757D; /*darker grey*/
 }
 a:hover{
-  color: #af371dff; /* chinese red*/
+  color: #7A0103; /*deep red*/
   text-decoration: underline;
 }
 a:active{
@@ -79,15 +136,11 @@ a:active{
 
 
 
-
-
-
-
-
 h1,
-h2 {
+h2, {
   font-family: "Barlow", sans sarif;
   font-weight: 900;
+  font-size: 30px;
   color: #0f0602ff; /*smoky black*/
 }
 
