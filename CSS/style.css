@@ -1,0 +1,36 @@
+body {
+  font-family: "Bitter", serif;
+  font-family:"Playfair Display", serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0f0602ff; /*smoky black*/
+  background-color: #E2E2DF; /*light gray*/
+  text-align: left;
+}
+
+#container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#home body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+}
+
+#guide {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+header {
+  background-color:
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+}
