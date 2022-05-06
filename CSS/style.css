@@ -6,7 +6,6 @@ body {
   color: #0f0602ff; /*smoky black*/
   background-color: #E2E2DF; /*pale gray*/
   text-align: left;
-
 }
 
 #container {
@@ -44,6 +43,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
+  margin-top: 25px;
 }
 
 #about-me {
@@ -53,11 +53,12 @@ body {
 }
 
 #about {
-  background-color: #FCF6BD; /*light yellow*/
   border: 5px solid #0f0602ff; /*smoky black*/
+  background-color: #FCF6BD; /*light yellow*/
   padding-left: 20px;
   padding-right: 20px;
   grid-gap: 10px;
+  margin-top: 20px;
 }
 
 
@@ -90,6 +91,20 @@ a:hover {
 }
 a:active {
   color: #C200FB; /*magenta*/
+}
+
+footer {
+  grid-area: footer;
+  padding: 20px;
+}
+
+#container header{
+  text-align: center;
+  box-shadow: 12px 12px 2px 1px #CCCCCC; /* gray*/
+  background-color: #BECEFB; /*darker periwinkle*/
+  border: 5px solid #0f0602ff; /*smoky black*/
+  margin-top: 15px;
+
 }
 
 #home header {
