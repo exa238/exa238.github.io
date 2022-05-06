@@ -10,15 +10,13 @@ body {
 
 #container {
   grid-area: container;
-  background-color: #dfe7fd; /*periwinkle*/
-  border: 5px solid #0f0602ff; /*smoky black*/
   width: 960px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-#home main{
+#home main {
   grid-area: home;
   width: 960px;
   margin: 0 auto;
@@ -34,7 +32,7 @@ body {
 }
 
 #guide {
-  background-color: #ffc8dd; /*light pink*/
+  background-color: #FFEFC8; /*pale yellow*/
   border: 5px solid #0f0602ff; /*smoky black*/
   padding-left: 20px;
   padding-right: 20px;
@@ -47,14 +45,14 @@ body {
 }
 
 #about-me {
-  background-color: #A9DEF9; /*blue*/
+  background-color: #f7d6e0; /*pale pink*/
   border: 5px solid #0f0602ff; /*smoky black*/
   padding-left: 20px;
 }
 
 #about {
   border: 5px solid #0f0602ff; /*smoky black*/
-  background-color: #FCF6BD; /*light yellow*/
+  background-color: #DAD3FF; /*pale purple*/
   padding-left: 20px;
   padding-right: 20px;
   grid-gap: 10px;
@@ -65,9 +63,11 @@ body {
 
 #container main {
   grid-area: main;
+  width: 960px;
+  margin: 0 auto;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 2fr;
   grid-template-areas:
     "ingredients ingredients"
     "instructions instructions"
@@ -77,9 +77,37 @@ body {
   padding-right: 20px;
 }
 
+#ingredients{
+  background-color: #fff1e6; /*pastel yellow*/
+  border: 5px solid #0f0602ff; /*smoky black*/
+  padding-left: 20px;
+  margin-top: 30px;
+  margin-right: 15px;
+}
+
+#instructions{
+  background-color: #BEE1E6; /*pastel green*/
+  border: 5px solid #0f0602ff; /*smoky black*/
+  padding-left: 20px;
+  width: 30ch;
+  padding-right: 20px;
+  margin-top: 30px;
+}
+
+#notes {
+  background-color: #FAD2E1; /*pastel pink*/
+  border: 5px solid #0f0602ff; /*smoky black*/
+  padding-left: 20px;
+  width: 60ch;
+  padding-right: 20px;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+
 a,
 a:link {
-  color: #DBCDF0; /*pale purple*/
+  color: #ee6055; /*strawberry red*/
   text-decoration: none;
 }
 a:visited {
@@ -104,10 +132,11 @@ footer {
   background-color: #BECEFB; /*darker periwinkle*/
   border: 5px solid #0f0602ff; /*smoky black*/
   margin-top: 15px;
+  width: 975px;
 }
 
 #home header {
-  background-color: #e8d7ff; /*pale purple*/
+  background-color: #BDE0FE; /*pale blue*/
   border: 5px solid #0f0602ff; /*smoky black*/
   padding-left: 20px;
   padding-right: 20px;
