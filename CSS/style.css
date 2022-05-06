@@ -4,33 +4,101 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #0f0602ff; /*smoky black*/
-  background-color: #E2E2DF; /*light gray*/
+  background-color: #E2E2DF; /*pale gray*/
   text-align: left;
+
 }
 
 #container {
+  grid-area: container;
+  background-color: #dfe7fd; /*periwinkle*/
+  border: 5px solid #0f0602ff; /*smoky black*/
   width: 960px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-#home body {
+#home {
+  grid-area: home;
+  width: 960px;
+  margin: 0 auto;
+
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 10px;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+
+  grid-gap: 20px;
 }
 
 #guide {
+  grid-area: guide;
+  background-color: #ffc8dd; /*light pink*/
+  border: 5px solid #0f0602ff; /*smoky black*/
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
+
 }
 
-header {
-  background-color:
-}
-
-main {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+#about-me {
+  grid-area: about-me;
+  background-color: #A9DEF9; /*blue*/
+  border: 5px solid #0f0602ff; /*smoky black*/
+  padding-left: 20px;
   grid-gap: 10px;
+}
+
+#about {
+  grid-area: about;
+  background-color: #FCF6BD; /*light yellow*/
+  border: 5px solid #0f0602ff; /*smoky black*/
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+#container main {
+  grid-area: main;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "ingredients ingredients"
+    "instructions instructions"
+    "notes notes";
+
+  grid-gap: 10px;
+  padding-right: 20px;
+}
+
+a,
+a:link {
+  color: #DBCDF0; /*pale purple*/
+  text-decoration: none;
+}
+a:visited {
+  color: #5D00FF; /*royal purple*/
+}
+a:hover {
+  color: #FF006E; /*hot pink*/
+  text-decoration: underline;
+}
+a:active {
+  color: #C200FB; /*magenta*/
+}
+
+#home header {
+  background-color: #e8d7ff; /*pale purple*/
+  border: 5px solid #0f0602ff; /*smoky black*/
+  padding-left: 20px;
+  padding-right: 20px;
 }
